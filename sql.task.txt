@@ -1,0 +1,23 @@
+create database BP215
+ create table Students(
+ İd int,
+[Name] nvarchar(200),
+ [SurName] nvarchar(200),
+ Age int ,
+ AveragePoint decimal(4,2)
+)
+insert into Students 
+values(1,'Cavidan', 'Mammadov',20, 99)
+insert into Students values(2, 'qorxmaz',' shahbazli',20,98)
+insert into Students values (3 , 'Memati', 'Bash',18,49)
+insert into Students values (4,'Elmir', 'Lenkeranski',19,51)
+insert into Students values (5, 'Raul', 'Qazaxli',19,47)
+insert into Students values (6,'Talib', 'Sabirabadski',20,99)
+select * from Students 
+where AveragePoint>51
+insert into Students values(7,'oruceli','Bayramov',20,66 )
+select * from Students
+where AveragePoint>51 and AveragePoint<90
+select * from Students
+where Name like 'A%i';
+insert into Students values(8, 'Anari', 'Balacai',25,66)
